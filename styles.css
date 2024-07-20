@@ -6,15 +6,16 @@ body {
 
 #visualization {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; /* Added to position buttons absolutely */
 }
 
 .scene {
     width: 90%;
-    height: 90%;
+    height: 100%;
 }
 
 .annotation {
@@ -31,3 +32,22 @@ body {
 .annotation-note-label {
     font-size: 12px;
 }
+
+.navigation {
+    text-align: center;
+    position: absolute; /* Changed to absolute positioning */
+    top: 800px; /* Positioned 10% from the bottom */
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+#variableDropdown {
+    padding: 10px;
+    font-size: 16px;
+}
+
